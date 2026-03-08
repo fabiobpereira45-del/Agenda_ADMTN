@@ -1,0 +1,1559 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "master",
+      "password": "$2b$10$s03CN4Deb5bWnylg1PgPS.e//e.nyamIdWjiLWS/gIxSDMVccyvRy",
+      "role": "master"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "Campo"
+    },
+    {
+      "id": 2,
+      "name": "Ensino/EBD"
+    },
+    {
+      "id": 3,
+      "name": "Jovens"
+    },
+    {
+      "id": 4,
+      "name": "Adolescentes"
+    },
+    {
+      "id": 5,
+      "name": "Infantil"
+    },
+    {
+      "id": 6,
+      "name": "Mulheres"
+    },
+    {
+      "id": 8,
+      "name": "Família"
+    },
+    {
+      "id": 9,
+      "name": "Missão"
+    },
+    {
+      "id": 10,
+      "name": "Evangelismo"
+    },
+    {
+      "id": 11,
+      "name": "Ação Social"
+    },
+    {
+      "id": 12,
+      "name": "Melhor Idade"
+    },
+    {
+      "id": 13,
+      "name": "Discipulado"
+    },
+    {
+      "id": 14,
+      "name": "Multimídia"
+    },
+    {
+      "id": 15,
+      "name": "Louvor"
+    },
+    {
+      "id": 16,
+      "name": "Eventos"
+    },
+    {
+      "id": 17,
+      "name": "Obras"
+    },
+    {
+      "id": 29,
+      "name": "Homens"
+    },
+    {
+      "id": 30,
+      "name": "Intercessão"
+    }
+  ],
+  "leaders": [
+    {
+      "id": 1,
+      "name": "Adaline",
+      "department_id": 13,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 3,
+      "name": "Adriele Vieira",
+      "department_id": 3,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 4,
+      "name": "Alex Marinho",
+      "department_id": 12,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 5,
+      "name": "Ana Maria",
+      "department_id": 12,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 6,
+      "name": "André Fonseca",
+      "department_id": 2,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 7,
+      "name": "Anete Cabral",
+      "department_id": 11,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 8,
+      "name": "Comissão de Ética",
+      "department_id": 1,
+      "phone": "",
+      "role": "Comissão",
+      "status": "Ativo"
+    },
+    {
+      "id": 9,
+      "name": "Daiana Freitas",
+      "department_id": 4,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 10,
+      "name": "Darlan Marcel",
+      "department_id": 17,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 11,
+      "name": "Diana Passos",
+      "department_id": 14,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 12,
+      "name": "Diretoria",
+      "department_id": 1,
+      "phone": "",
+      "role": "Diretoria",
+      "status": "Ativo"
+    },
+    {
+      "id": 13,
+      "name": "Edilene Glória",
+      "department_id": 16,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 14,
+      "name": "Edilma Portugal",
+      "department_id": 8,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 15,
+      "name": "Edilton Barreto",
+      "department_id": 2,
+      "phone": "",
+      "role": "Superintendente",
+      "status": "Ativo"
+    },
+    {
+      "id": 16,
+      "name": "Ediney Moreira",
+      "department_id": 10,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 17,
+      "name": "Elaine Barreto",
+      "department_id": 5,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 18,
+      "name": "Eliana Mendes",
+      "department_id": 6,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 19,
+      "name": "Elisamar Moreira",
+      "department_id": 11,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 20,
+      "name": "Everton Menezes",
+      "department_id": 4,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 21,
+      "name": "Ezenilde Mendes Conceição",
+      "department_id": 4,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 22,
+      "name": "Fernando Campos",
+      "department_id": 2,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 23,
+      "name": "Fábio Barreto",
+      "department_id": 2,
+      "phone": "",
+      "role": "Superintendente",
+      "status": "Ativo"
+    },
+    {
+      "id": 24,
+      "name": "Gabriel Oliveira",
+      "department_id": 17,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 25,
+      "name": "Hebert Menezes",
+      "department_id": 13,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 26,
+      "name": "Hermenegildo Portugal",
+      "department_id": 8,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 27,
+      "name": "Jean Carvalho",
+      "department_id": 10,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 28,
+      "name": "Jeferson Santos",
+      "department_id": 14,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 29,
+      "name": "João Victor",
+      "department_id": 14,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 30,
+      "name": "Juciara Moreira",
+      "department_id": 6,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 31,
+      "name": "Jucileia Barreto",
+      "department_id": 4,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 32,
+      "name": "Jucilene Pereira",
+      "department_id": 12,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 33,
+      "name": "Jucimar",
+      "department_id": 13,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 34,
+      "name": "Kaio",
+      "department_id": 14,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 35,
+      "name": "Laiana Caldas",
+      "department_id": 5,
+      "phone": "",
+      "role": "Coordenadora",
+      "status": "Ativo"
+    },
+    {
+      "id": 36,
+      "name": "Larissa Menezes",
+      "department_id": 13,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 37,
+      "name": "Lismar Divino",
+      "department_id": 12,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 38,
+      "name": "Léa Fernandes",
+      "department_id": 3,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 39,
+      "name": "Gabriel Oliveira",
+      "department_id": 17,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 40,
+      "name": "Maria da Lapa",
+      "department_id": 6,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 41,
+      "name": "Neuraci Souza",
+      "department_id": 11,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 42,
+      "name": "Pastor Presidente",
+      "department_id": 1,
+      "phone": "",
+      "role": "Pastor",
+      "status": "Ativo"
+    },
+    {
+      "id": 43,
+      "name": "Paula Marinho",
+      "department_id": 12,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 44,
+      "name": "Pb. Aislan Bastos",
+      "department_id": 3,
+      "phone": "",
+      "role": "Co-Pastor",
+      "status": "Ativo"
+    },
+    {
+      "id": 45,
+      "name": "Pr. Felipe Carvalho das Viagens",
+      "department_id": 1,
+      "phone": "",
+      "role": "Pastor",
+      "status": "Ativo"
+    },
+    {
+      "id": 46,
+      "name": "Pr. Jonas Azevedo",
+      "department_id": 1,
+      "phone": "",
+      "role": "Co-Pastor",
+      "status": "Ativo"
+    },
+    {
+      "id": 47,
+      "name": "Rafaela Santos",
+      "department_id": 16,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 48,
+      "name": "Rejane Reis",
+      "department_id": 3,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 49,
+      "name": "Robson Sacramento",
+      "department_id": 4,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 50,
+      "name": "Rogério Assunção",
+      "department_id": 10,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 51,
+      "name": "Rose Brito",
+      "department_id": 15,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 52,
+      "name": "Rosângela Souza",
+      "department_id": 6,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 53,
+      "name": "Samuel Azevedo",
+      "department_id": 9,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 54,
+      "name": "Talmon Vieira",
+      "department_id": 3,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 55,
+      "name": "Gabriel Oliveira",
+      "department_id": 29,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 56,
+      "name": "Darlan Marcel",
+      "department_id": 29,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    },
+    {
+      "id": 57,
+      "name": "Ezenildes Mendes",
+      "department_id": 30,
+      "phone": "",
+      "role": "Líder",
+      "status": "Ativo"
+    }
+  ],
+  "events": [
+    {
+      "id": 2,
+      "title": "REUNIÃO MINISTÉRIAL",
+      "date": "2026-02-06",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "title": "REUNIÃO DE LÍDERES DO DEPIN",
+      "date": "2026-02-21",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 5,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "title": "CÍRCULO DE ORAÇÃO JOVENS",
+      "date": "2026-02-21",
+      "time": "09:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "title": "PROFOLI",
+      "date": "2026-02-28",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 6,
+      "title": "REUNIÃO DE SUPERINTENDENTES",
+      "date": "2026-03-05",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 7,
+      "title": "CONFERENCIA MERGULHAR - MULHERES",
+      "date": "2026-10-17",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 6,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "title": "CULTO INTEGRADO TEENS",
+      "date": "2026-03-20",
+      "time": "18:00",
+      "location": "A DEFINIR",
+      "department_id": 4,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 9,
+      "title": "CÍRCULO DE ORAÇÃO JOVENS",
+      "date": "2026-03-21",
+      "time": "09:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 10,
+      "title": "PROFOLI",
+      "date": "2026-03-28",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 11,
+      "title": "VIGÍLIA COM JOVENS",
+      "date": "2026-04-02",
+      "time": "21:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 12,
+      "title": "CRUZADA EVANGELÍSTICA",
+      "date": "2026-04-11",
+      "time": "15:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 10,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 13,
+      "title": "REUNIÃO CONSELHO MINISTERIAL",
+      "date": "2026-04-16",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 14,
+      "title": "TRILHA JOVEM",
+      "date": "2026-04-18",
+      "time": "09:00",
+      "location": "A DEFINIR",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 15,
+      "title": "PROFOLI",
+      "date": "2026-04-25",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 16,
+      "title": "REUNIÃO DE MEMBROS",
+      "date": "2026-04-30",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 17,
+      "title": "REUNIÃO DE SUPERINTENDENTES",
+      "date": "2026-05-07",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 18,
+      "title": "CONFERENCIA MERGULHAR - ADOLECENTES",
+      "date": "2026-05-09",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 19,
+      "title": "DIA DAS MÃES EM TODAS AS IGREJAS",
+      "date": "2026-05-10",
+      "time": "18:00",
+      "location": "TODAS AS IGREJAS",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 20,
+      "title": "1º ENCONTRO DE FAMÍLIAS 2026",
+      "date": "2026-05-13",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 21,
+      "title": "ENCONTRO DE HOMENS",
+      "date": "2026-05-16",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 29,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 22,
+      "title": "CULTO INTEGRADO JOVENS",
+      "date": "2026-05-23",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 23,
+      "title": "BATISMO",
+      "date": "2026-05-24",
+      "time": "13:00",
+      "location": "A DEFINIR",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 24,
+      "title": "PROFOLI",
+      "date": "2026-05-30",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 25,
+      "title": "ANIVERSÁRIO DO PRESIDENTE",
+      "date": "2026-06-09",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 26,
+      "title": "CRUZADA EVANGELÍSTICA",
+      "date": "2026-06-13",
+      "time": "15:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 10,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 27,
+      "title": "REUNIÃO CONSELHO MINISTERIAL",
+      "date": "2026-06-19",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 28,
+      "title": "PROFOLI",
+      "date": "2026-06-27",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 29,
+      "title": "CONFERENCIA MERGULHAR - HOMENS",
+      "date": "2026-07-11",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 29,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 30,
+      "title": "REUNIÃO DE SUPERINTENDES",
+      "date": "2026-07-16",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 31,
+      "title": "PROFOLI",
+      "date": "2026-07-25",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 32,
+      "title": "REUNIÃO DE MEMBROS",
+      "date": "2026-07-30",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 33,
+      "title": "ANIVERSÁRIO DO GRUPO ATALAIA DE DEUS",
+      "date": "2026-08-01",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 15,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 34,
+      "title": "ANIVERSÁRIO DO GRUPO ATALAIA DE DEUS",
+      "date": "2026-08-02",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 15,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 35,
+      "title": "CRUZADA EVANGELÍSTICA",
+      "date": "2026-08-08",
+      "time": "15:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 10,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 36,
+      "title": "DIA DOS PAIS EM TODAS AS IGREJAS",
+      "date": "2026-08-09",
+      "time": "18:00",
+      "location": "TODAS AS IGREJAS",
+      "department_id": 29,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 37,
+      "title": "REUNIÃO CONSELHO MINISTERIAL",
+      "date": "2026-08-13",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 38,
+      "title": "PALESTRA JOVENS",
+      "date": "2026-08-15",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 39,
+      "title": "ANIVERSÁRIO DOS LOUVORES DOS REMIDOS",
+      "date": "2026-08-21",
+      "time": "19:00",
+      "location": "TEMPO CENTRAL",
+      "department_id": 15,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 40,
+      "title": "ANIVERSÁRIO DOS LOUVORES DOS REMIDOS",
+      "date": "2026-08-22",
+      "time": "19:00",
+      "location": "TEMPO CENTRAL",
+      "department_id": 15,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 41,
+      "title": "ANIVERSÁRIO DOS LOUVORES DOS REMIDOS",
+      "date": "2026-08-23",
+      "time": "18:00",
+      "location": "TEMPO CENTRAL",
+      "department_id": 15,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 42,
+      "title": "PROFOLI",
+      "date": "2026-08-29",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 43,
+      "title": "PALESTRA PARA HOMENS",
+      "date": "2026-09-05",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 29,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 44,
+      "title": "CONFERENCIA MERGULHAR - JOVENS",
+      "date": "2026-09-12",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 45,
+      "title": "REUNIÃO SUPERINTENDENTES",
+      "date": "2026-09-17",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 46,
+      "title": "2º ENCONTRO DE FAMÍLIAS 2026",
+      "date": "2026-09-19",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 47,
+      "title": "PROFOLI",
+      "date": "2026-09-26",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 48,
+      "title": "ÚLTIMO CULTO INTEGRADO DE ADOLECENTES DE 2026",
+      "date": "2026-10-03",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 4,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 49,
+      "title": "REUNIÃO DE MEMBROS",
+      "date": "2026-10-08",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 50,
+      "title": "OUTUBRO ROSA MULHERES",
+      "date": "2026-10-10",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 6,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 51,
+      "title": "CRUZADA EVANGELÍSTICA",
+      "date": "2026-10-17",
+      "time": "15:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 10,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 52,
+      "title": "REUNIÃO CONSELHO MINISTERIAL",
+      "date": "2026-10-22",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 53,
+      "title": "LUAU JOVENS",
+      "date": "2026-10-24",
+      "time": "14:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 54,
+      "title": "PROFOLI",
+      "date": "2026-10-31",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 55,
+      "title": "CULTO INTEGRADO DE JOVENS",
+      "date": "2026-11-07",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 3,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 56,
+      "title": "CONFERENCIA MISSIONÁRIA",
+      "date": "2026-11-14",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 9,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 57,
+      "title": "VIAGEM DE CAISAIS",
+      "date": "2026-11-20",
+      "time": "06:00",
+      "location": "A DEFINIR",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 58,
+      "title": "VIAGEM DE CAISAIS",
+      "date": "2026-11-21",
+      "time": "06:00",
+      "location": "A DEFINIR",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 59,
+      "title": "VIAGEM DE CAISAIS",
+      "date": "2026-11-22",
+      "time": "06:00",
+      "location": "A DEFINIR",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 60,
+      "title": "PROFOLI",
+      "date": "2026-11-28",
+      "time": "16:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 2,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 61,
+      "title": "BATISMO",
+      "date": "2026-11-29",
+      "time": "13:00",
+      "location": "A DEFINIR",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 62,
+      "title": "AGO - ASSEMBLÉIA GERAL ORDINÁRIA",
+      "date": "2026-12-10",
+      "time": "19:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 63,
+      "title": "CONFRATERNIZAÇÃO DE OBREIROS E ESPOSAS",
+      "date": "2026-12-12",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 1,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    },
+    {
+      "id": 64,
+      "title": "Feriado: Confraternização Universal",
+      "date": "2026-01-01",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 65,
+      "title": "Ponto Facultativo: Carnaval",
+      "date": "2026-02-16",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 66,
+      "title": "Feriado: Terça-feira de Carnaval",
+      "date": "2026-02-17",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 67,
+      "title": "Ponto Facultativo: Quarta-feira de Cinzas",
+      "date": "2026-02-18",
+      "time": "00:00",
+      "location": "Brasil",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 68,
+      "title": "Feriado: Sexta-feira Santa",
+      "date": "2026-04-03",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 69,
+      "title": "Feriado: Tiradentes",
+      "date": "2026-04-21",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 70,
+      "title": "Feriado: Dia do Trabalhador",
+      "date": "2026-05-01",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 71,
+      "title": "Feriado: Corpus Christi",
+      "date": "2026-06-04",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 72,
+      "title": "Feriado: Independência do Brasil",
+      "date": "2026-09-07",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 73,
+      "title": "Feriado: Nossa Senhora Aparecida",
+      "date": "2026-10-12",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 74,
+      "title": "Feriado: Finados",
+      "date": "2026-11-02",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 75,
+      "title": "Feriado: Proclamação da República",
+      "date": "2026-11-15",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 76,
+      "title": "Feriado: Dia da Consciência Negra",
+      "date": "2026-11-20",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 77,
+      "title": "Feriado: Natal",
+      "date": "2026-12-25",
+      "time": "00:00",
+      "location": "Nacional",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Feriado",
+      "description": "Feriado Nacional"
+    },
+    {
+      "id": 78,
+      "title": "Dia Mundial da Paz",
+      "date": "2026-01-01",
+      "time": "00:00",
+      "location": "Mundial",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Comemorativo",
+      "description": "Data Comemorativa"
+    },
+    {
+      "id": 79,
+      "title": "Dia Mundial de Luta Contra o Câncer",
+      "date": "2026-02-04",
+      "time": "00:00",
+      "location": "Mundial",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Comemorativo",
+      "description": "Data Comemorativa"
+    },
+    {
+      "id": 80,
+      "title": "Dia Internacional da Mulher",
+      "date": "2026-03-08",
+      "time": "00:00",
+      "location": "Mundial",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Comemorativo",
+      "description": "Data Comemorativa"
+    },
+    {
+      "id": 81,
+      "title": "Dia Mundial da Água",
+      "date": "2026-03-22",
+      "time": "00:00",
+      "location": "Mundial",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Comemorativo",
+      "description": "Data Comemorativa"
+    },
+    {
+      "id": 82,
+      "title": "Dia da Reforma Protestante",
+      "date": "2026-10-31",
+      "time": "00:00",
+      "location": "Mundial",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Comemorativo",
+      "description": "Data Comemorativa"
+    },
+    {
+      "id": 83,
+      "title": "Dia do Pastor",
+      "date": "2026-06-14",
+      "time": "00:00",
+      "location": "Local",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Comemorativo",
+      "description": "Comemorativo"
+    },
+    {
+      "id": 84,
+      "title": "Dia da Bíblia",
+      "date": "2026-12-13",
+      "time": "00:00",
+      "location": "Local",
+      "department_id": null,
+      "status": "Aprovado",
+      "type": "Comemorativo",
+      "description": "Comemorativo"
+    },
+    {
+      "id": 85,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-03-15",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 86,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-04-26",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 87,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-05-10",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 88,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-06-21",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 89,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-07-19",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 90,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-08-09",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 91,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-09-20",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 92,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-10-18",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 93,
+      "title": "CULTO DE FAMÍLIA",
+      "date": "2026-11-15",
+      "time": "18:00",
+      "location": "TEMPLO CENTRAL",
+      "department_id": 8,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": null
+    },
+    {
+      "id": 94,
+      "title": "CULTO ESPECIAL PARA AS MULHERES (ENCONTRO DE PÉROLAS)",
+      "date": "2026-03-14",
+      "time": "18:00",
+      "location": "Templo Central",
+      "department_id": 6,
+      "status": "Aprovado",
+      "type": "Interno",
+      "description": ""
+    }
+  ]
+}
