@@ -84,14 +84,17 @@ export default function PreSchedule() {
       }
 
       // 2. Prosseguir com a inserção
+      // Remover os campos name e phone do envio direto (pois a tabela usa applicant_name e applicant_phone)
+      const { name, phone, ...eventData } = formData;
+
       const { error } = await supabase
         .from('events')
         .insert([{
-          ...formData,
+          ...eventData,
           department_id: formData.department_id || null,
           status: 'Pendente',
-          applicant_name: formData.name,
-          applicant_phone: formData.phone
+          applicant_name: name,
+          applicant_phone: phone
         }]);
 
       if (error) throw error;
