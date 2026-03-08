@@ -180,8 +180,8 @@ export default function Home() {
         <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-purple-500 rounded-full blur-[100px] opacity-30"></div>
         <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-indigo-500 rounded-full blur-[100px] opacity-30"></div>
 
-        <div className="relative z-10 p-8 sm:p-12 md:p-16 flex flex-col md:flex-row gap-8 items-center justify-between">
-          <div className="flex-1 space-y-6 text-center md:text-left">
+        <div className="relative z-10 p-6 sm:p-12 md:p-16 flex flex-col md:flex-row gap-8 items-center justify-between">
+          <div className="flex-1 space-y-6 text-center md:text-left w-full">
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -191,7 +191,7 @@ export default function Home() {
               <Sparkles className="w-4 h-4" />
               <span>Bem-vindo à ADMTN</span>
             </motion.div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight font-outfit">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight font-outfit">
               Agenda <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
                 Oficial e Completa
@@ -200,6 +200,23 @@ export default function Home() {
             <p className="text-lg text-indigo-100 max-w-xl mx-auto md:mx-0 font-light leading-relaxed">
               Fique por dentro de todos os eventos, cultos e programações. Participe e conecte-se com nossa comunidade.
             </p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="flex justify-center md:justify-start"
+            >
+              <Link
+                to="/pre-agenda"
+                className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl font-bold text-lg shadow-[0_10px_30px_rgba(79,70,229,0.4)] hover:shadow-[0_15px_40px_rgba(79,70,229,0.6)] transition-all transform hover:-translate-y-1 overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                <CalendarIcon className="w-6 h-6" />
+                <span>Solicitar Pré-Agenda</span>
+                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </motion.div>
           </div>
 
           <motion.div

@@ -95,9 +95,9 @@ export default function PublicLayout() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-x-0 top-[64px] z-40 md:hidden glass border-b border-slate-200/50 shadow-xl"
+            className="fixed inset-x-0 top-[64px] z-40 md:hidden glass border-b border-slate-200/50 shadow-xl max-h-[calc(100vh-80px)] overflow-y-auto"
           >
-            <div className="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+            <div className="px-4 pt-2 pb-6 space-y-2 flex flex-col min-h-fit">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
