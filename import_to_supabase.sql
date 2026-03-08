@@ -1,8 +1,8 @@
 
--- Limpar dados existentes (opcional, remova se quiser manter o que já tem no Supabase)
--- DELETE FROM events;
--- DELETE FROM leaders;
--- DELETE FROM departments;
+-- Limpar dados existentes para evitar conflitos de ID ou Nome Único
+DELETE FROM events;
+DELETE FROM leaders;
+DELETE FROM departments;
 
 -- Inserir Departamentos
 INSERT INTO departments (id, name) VALUES 

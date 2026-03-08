@@ -12,7 +12,9 @@ export default function PreSchedule() {
     location: '',
     department_id: '',
     description: '',
-    type: 'Interno'
+    type: 'Interno',
+    name: '',
+    phone: ''
   });
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -36,7 +38,21 @@ export default function PreSchedule() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    let { name, value } = e.target;
+
+    // Máscara de telefone (WA)
+    if (name === 'phone') {
+      value = value.replace(/\D/g, ''); // Remove não números
+      if (value.length > 2 && value.length <= 6) {
+        value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+      } else if (value.length > 6 && value.length <= 10) {
+        value = `(${value.slice(0, 2)}) ${value.slice(2, 6)}-${value.slice(6)}`;
+      } else if (value.length > 10) {
+        value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
+      }
+    }
+
+    setFormData({ ...formData, [name]: value });
   };
 
   const [showCollisionModal, setShowCollisionModal] = useState<any>(null);
@@ -73,7 +89,9 @@ export default function PreSchedule() {
         .insert([{
           ...formData,
           department_id: formData.department_id || null,
-          status: 'Pendente'
+          status: 'Pendente',
+          applicant_name: formData.name,
+          applicant_phone: formData.phone
         }]);
 
       if (error) throw error;
@@ -81,7 +99,7 @@ export default function PreSchedule() {
       setSuccess(true);
       setShowCollisionModal(null);
       setFormData({
-        title: '', date: '', time: '', location: '', department_id: '', description: '', type: 'Interno'
+        title: '', date: '', time: '', location: '', department_id: '', description: '', type: 'Interno', name: '', phone: ''
       });
     } catch (err: any) {
       setError(err.message || 'Erro ao enviar pré-agenda');
@@ -179,6 +197,33 @@ export default function PreSchedule() {
                     onChange={handleChange}
                     className="w-full px-5 py-4 rounded-2xl border-2 border-slate-200 focus:ring-0 focus:border-indigo-500 transition-all bg-white shadow-sm hover:border-slate-300 outline-none text-slate-800 font-medium"
                     placeholder="Ex: Culto de Jovens, Ensaio Geral..."
+                  />
+                </div>
+
+                <div className="space-y-2 group">
+                  <label className="block text-sm font-bold text-slate-700 group-focus-within:text-indigo-600 transition-colors uppercase tracking-wider text-xs flex items-center gap-2">Seu Nome (Solicitante)</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-5 py-4 rounded-2xl border-2 border-slate-200 focus:ring-0 focus:border-indigo-500 transition-all bg-white shadow-sm hover:border-slate-300 outline-none text-slate-800 font-medium"
+                    placeholder="Como podemos lhe chamar?"
+                  />
+                </div>
+
+                <div className="space-y-2 group">
+                  <label className="block text-sm font-bold text-slate-700 group-focus-within:text-indigo-600 transition-colors uppercase tracking-wider text-xs flex items-center gap-2">WhatsApp p/ Contato</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-5 py-4 rounded-2xl border-2 border-slate-200 focus:ring-0 focus:border-indigo-500 transition-all bg-white shadow-sm hover:border-slate-300 outline-none text-slate-800 font-medium"
+                    placeholder="(99) 99999-9999"
+                    maxLength={15}
                   />
                 </div>
 
