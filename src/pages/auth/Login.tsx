@@ -154,6 +154,26 @@ export default function Login() {
                   )}
                 </motion.button>
               </div>
+
+              <div className="flex flex-col gap-4 mt-6">
+                <Link
+                  to="/forgot-password"
+                  className="text-indigo-300 hover:text-white text-xs text-center transition-colors"
+                >
+                  Esqueceu seu login ou senha?
+                </Link>
+                <div className="flex items-center gap-4 py-2">
+                  <div className="h-px bg-white/10 flex-1"></div>
+                  <span className="text-white/20 text-[10px] font-bold uppercase tracking-widest">Ou</span>
+                  <div className="h-px bg-white/10 flex-1"></div>
+                </div>
+                <Link
+                  to="/register"
+                  className="w-full py-3 border border-white/10 hover:bg-white/5 rounded-xl text-white text-xs font-bold text-center transition-all"
+                >
+                  Solicitar Acesso
+                </Link>
+              </div>
             </form>
           </div>
         </div>

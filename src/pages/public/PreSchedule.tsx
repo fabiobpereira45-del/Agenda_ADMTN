@@ -39,12 +39,35 @@ export default function PreSchedule() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const [showCollisionModal, setShowCollisionModal] = useState<any>(null);
+
+  const handleSubmit = async (e: React.FormEvent, bypassCollision = false) => {
+    if (e) e.preventDefault();
     setLoading(true);
     setError('');
 
     try {
+      // 1. Verificar colisão de data/hora (apenas se não estiver ignorando)
+      if (!bypassCollision) {
+        const { data: conflictingEvents, error: collisionError } = await supabase
+          .from('events')
+          .select('title, time, status')
+          .eq('date', formData.date)
+          .eq('time', formData.time)
+          .neq('status', 'Rejeitado') // Ignorar eventos rejeitados
+          .limit(1);
+
+        if (collisionError) throw collisionError;
+
+        if (conflictingEvents && conflictingEvents.length > 0) {
+          const conflict = conflictingEvents[0];
+          setShowCollisionModal(conflict);
+          setLoading(false);
+          return;
+        }
+      }
+
+      // 2. Prosseguir com a inserção
       const { error } = await supabase
         .from('events')
         .insert([{
@@ -56,6 +79,7 @@ export default function PreSchedule() {
       if (error) throw error;
 
       setSuccess(true);
+      setShowCollisionModal(null);
       setFormData({
         title: '', date: '', time: '', location: '', department_id: '', description: '', type: 'Interno'
       });
@@ -259,6 +283,68 @@ export default function PreSchedule() {
               </div>
             </form>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Modal de Colisão de Datas */}
+      <AnimatePresence>
+        {showCollisionModal && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowCollisionModal(null)}
+              className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="relative bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 p-8 md:p-10 max-w-lg w-full text-center overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
+
+              <div className="w-20 h-20 bg-amber-100 text-amber-600 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-inner border border-amber-200">
+                <Calendar className="w-10 h-10" />
+              </div>
+
+              <h3 className="text-2xl font-extrabold text-slate-800 font-outfit mb-3">Conflito de Agenda!</h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                Já existe uma programação registrada para esta data e horário:
+              </p>
+
+              <div className="bg-slate-50 rounded-2xl p-6 mb-8 border border-slate-100 text-left">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-2 h-2 rounded-full bg-amber-500"></div>
+                  <span className="font-bold text-slate-800">{showCollisionModal.title}</span>
+                </div>
+                <div className="flex items-center gap-3 text-slate-500 text-sm">
+                  <Clock className="w-4 h-4" />
+                  <span>Horário: {showCollisionModal.time}</span>
+                </div>
+              </div>
+
+              <p className="text-xs text-slate-400 mb-8 italic">
+                Se decidir prosseguir, sua solicitação será analisada pela administração juntamente com o **Pastor Presidente**.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button
+                  onClick={() => handleSubmit(null as any, true)}
+                  className="flex-1 py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-2xl font-bold transition-all shadow-lg text-sm"
+                >
+                  Desejo Prosseguir
+                </button>
+                <button
+                  onClick={() => setShowCollisionModal(null)}
+                  className="flex-1 py-4 bg-white hover:bg-slate-50 text-slate-600 rounded-2xl font-bold transition-all border border-slate-200 text-sm"
+                >
+                  Mudar Data/Hora
+                </button>
+              </div>
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </div>
