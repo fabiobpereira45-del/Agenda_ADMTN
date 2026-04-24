@@ -407,7 +407,7 @@ export default function Home() {
                           className={`group cursor-pointer rounded-lg border transition-all duration-200 overflow-hidden
                             ${isSelected
                               ? isSpecial ? 'bg-fuchsia-600 border-fuchsia-600 shadow-md transform scale-[1.01]' : isFamilyCult ? 'bg-orange-600 border-orange-600 shadow-md transform scale-[1.02]' : 'bg-indigo-600 border-indigo-600 shadow-md transform scale-[1.02]'
-                              : isSpecial ? 'bg-fuchsia-50/50 border-fuchsia-100 hover:border-fuchsia-300' : isFamilyCult ? 'bg-orange-50/80 border-orange-200 hover:border-orange-400' : 'bg-white border-slate-200 hover:border-indigo-300 hover:shadow-sm'}`}
+                              : isSpecial ? 'bg-fuchsia-50 border-fuchsia-200 hover:border-fuchsia-400' : isFamilyCult ? 'bg-orange-50 border-orange-200 hover:border-orange-400' : 'bg-indigo-50/50 border-indigo-100 hover:border-indigo-300 hover:shadow-sm'}`}
                         >
                           <div className={`px-2 py-1.5 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 ${isSelected ? 'text-white' : 'text-slate-700'}`}>
                             {!isSpecial && (
