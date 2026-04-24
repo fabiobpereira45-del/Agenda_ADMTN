@@ -373,7 +373,7 @@ export default function Home() {
                 >
                   <div
                     onClick={() => setSelectedDay(day)}
-                    className="flex justify-between items-start mb-1 sm:mb-2 px-1 cursor-pointer h-full w-full"
+                    className="flex justify-between items-start mb-1 sm:mb-2 px-1 cursor-pointer"
                   >
                     <span className={`text-sm sm:text-base font-bold w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full transition-all 
                       ${isToday ? 'bg-indigo-600 text-white shadow-md shadow-indigo-200' :
