@@ -99,6 +99,25 @@ export default function PreSchedule() {
 
       if (error) throw error;
 
+      // 3. Notificar via WhatsApp (n8n Webhook)
+      const WEBHOOK_URL = import.meta.env.VITE_N8N_WEBHOOK_URL;
+
+      try {
+        await fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            applicant_name: name,
+            applicant_phone: phone,
+            title: formData.title,
+            date: formData.date,
+            time: formData.time
+          })
+        });
+      } catch (webhookErr) {
+        console.error('Erro ao disparar webhook de notificação:', webhookErr);
+      }
+
       setSuccess(true);
       setShowCollisionModal(null);
       setFormData({

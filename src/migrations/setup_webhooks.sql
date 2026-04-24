@@ -16,7 +16,7 @@ BEGIN
   IF NEW.status = 'Pendente' THEN
     -- Chamada POST para o Flow-Gravit (Substitua a URL abaixo quando criar o fluxo)
     PERFORM net.http_post(
-        url := 'https://flow-gravit.vercel.app/api/webhook/7da1f009-b400-4fe2-be65-6b74f546086f',
+        url := 'https://agendaadmtn.app.n8n.cloud/webhook/agenda-preschedule',
         body := jsonb_build_object(
             'trigger_type', 'NEW_PRESCHEDULE',
             'event_id', NEW.id,
@@ -53,7 +53,7 @@ BEGIN
     -- Só enviar a notificação se houver um número de telefone registrado
     IF NEW.applicant_phone IS NOT NULL AND NEW.applicant_phone != '' THEN
         PERFORM net.http_post(
-            url := 'https://flow-gravit.vercel.app/api/webhook/7da1f009-b400-4fe2-be65-6b74f546086f',
+            url := 'https://agendaadmtn.app.n8n.cloud/webhook/agenda-preschedule',
             body := jsonb_build_object(
                 'trigger_type', 'STATUS_CHANGED',
                 'event_id', NEW.id,
@@ -88,7 +88,7 @@ CREATE TRIGGER on_preschedule_status_changed
 -- Envia um webhook todo dia 1º de cada mês às 08:00
 -- SELECT cron.schedule('send_monthly_agenda', '0 8 1 * *', $$
 --     SELECT net.http_post(
---         url := 'https://flow-gravit.vercel.app/api/webhook/7da1f009-b400-4fe2-be65-6b74f546086f',
+--         url := 'https://agendaadmtn.app.n8n.cloud/webhook/agenda-preschedule',
 --         body := jsonb_build_object(
 --             'trigger_type', 'MONTHLY_AGENDA',
 --             'month', extract(month from current_date)
@@ -102,7 +102,7 @@ CREATE TRIGGER on_preschedule_status_changed
 -- Roda de hora em hora checando se algum evento aprovado acontecerá nas próximas 6h
 -- SELECT cron.schedule('check_upcoming_events', '0 * * * *', $$
 --     SELECT net.http_post(
---         url := 'https://flow-gravit.vercel.app/api/webhook/7da1f009-b400-4fe2-be65-6b74f546086f',
+--         url := 'https://agendaadmtn.app.n8n.cloud/webhook/agenda-preschedule',
 --         body := jsonb_build_object(
 --             'trigger_type', 'REMINDER_6H',
 --             'event_id', e.id,

@@ -9,6 +9,7 @@ import ForgotPassword from './pages/auth/ForgotPassword';
 import ResetPassword from './pages/auth/ResetPassword';
 import AdminDashboard from './pages/admin/Dashboard';
 import ManageEvents from './pages/admin/ManageEvents';
+import ManagePendingEvents from './pages/admin/ManagePendingEvents';
 import ManageLeaders from './pages/admin/ManageLeaders';
 import ManageDepartments from './pages/admin/ManageDepartments';
 import ManageCommemorative from './pages/admin/ManageCommemorative';
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Navigate to="/admin/dashboard" replace />} />
           <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="pending-events" element={<ManagePendingEvents />} />
           <Route path="events" element={<ManageEvents />} />
           <Route path="commemorative" element={<ManageCommemorative />} />
           <Route path="leaders" element={<ManageLeaders />} />

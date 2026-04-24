@@ -141,7 +141,8 @@ export default function AdminLayout() {
   // Definir itens de navegação baseados no cargo
   const navItems = [
     { path: '/admin/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-    { path: '/admin/events', icon: Calendar, label: 'Eventos' },
+    { path: '/admin/pending-events', icon: ShieldAlert, label: 'Pré-agendamentos' },
+    { path: '/admin/events', icon: Calendar, label: 'Agenda Oficial' },
     { path: '/admin/commemorative', icon: Sparkles, label: 'Datas Comemorativas' },
     { path: '/admin/leaders', icon: Users, label: 'Líderes' },
     { path: '/admin/departments', icon: Tags, label: 'Departamentos' },
